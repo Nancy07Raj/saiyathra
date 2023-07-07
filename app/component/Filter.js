@@ -13,14 +13,19 @@ export default function Filter() {
       </div>
       <Container className="mb-5">
         <Row>
-          <Col lg={2} md={2} xs={4}>
+          <Col lg={2} md={2} xs={4} className="p-0">
             <div className="filter-tab p-2 rounded-top-4 text-center ">
               Flights
             </div>
           </Col>
         </Row>
         <Row className="filter-search justify-content-center py-4 px-5">
-          <Col lg={2} md={6} sm={12} className="py-lg-0 py-md-2 py-sm-2 py-xs-2">
+          <Col
+            lg={2}
+            md={6}
+            sm={12}
+            className="py-lg-0 py-md-2 py-sm-2 py-xs-2"
+          >
             <p>Flying from:</p>
             <Select
               placeholder="City or Airport"
@@ -28,7 +33,12 @@ export default function Filter() {
               suffixIcon={<BiSolidDownArrow />}
             />
           </Col>
-          <Col lg={2} md={6} sm={12} className="py-lg-0 py-md-2 py-sm-2 py-xs-2">
+          <Col
+            lg={2}
+            md={6}
+            sm={12}
+            className="py-lg-0 py-md-2 py-sm-2 py-xs-2"
+          >
             <p>To:</p>
             <Select
               placeholder="City or Airport"
@@ -36,21 +46,31 @@ export default function Filter() {
               suffixIcon={<BiSolidDownArrow />}
             />
           </Col>
-          <Col lg={2} md={6} sm={12} className="py-lg-0 py-md-2 py-xs-2 py-sm-2">
+          <Col
+            lg={2}
+            md={6}
+            sm={12}
+            className="py-lg-0 py-md-2 py-xs-2 py-sm-2"
+          >
             <p>Available date:</p>
             <DatePicker
               suffixIcon={<BiSolidDownArrow />}
               placeholder="Mm/Dd/Yy"
             />
           </Col>
-          <Col lg={2} md={6} sm={12} className="py-lg-0 py-md-2 py-xs-2 py-sm-2">
+          <Col
+            lg={2}
+            md={6}
+            sm={12}
+            className="py-lg-0 py-md-2 py-xs-2 py-sm-2"
+          >
             <p>Returning:</p>
             <DatePicker
               suffixIcon={<BiSolidDownArrow />}
               placeholder="Mm/Dd/Yy"
             />
           </Col>
-          <Col lg={1} md={6} sm={12} className="py-lg-0 py-md-2 py-xs-2 py-sm-2">
+          <Col lg={1} md={6} xs={6} className="py-lg-0 py-md-2 py-xs-2 py-sm-2">
             <p>Adult:</p>
             <Select
               placeholder="1"
@@ -58,7 +78,7 @@ export default function Filter() {
               suffixIcon={<BiSolidDownArrow />}
             />
           </Col>
-          <Col lg={1} md={6} sm={12} className="py-lg-0 py-md-2 py-sm-2 py-xs-2">
+          <Col lg={1} md={6} xs={6} className="py-lg-0 py-md-2 py-sm-2 py-xs-2">
             <p>Child:</p>
             <Select
               placeholder="1"

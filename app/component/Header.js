@@ -3,7 +3,15 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {Row,Col,NavDropdown,Navbar,Nav,Button,Container} from 'react-bootstrap'
+import {
+  Row,
+  Col,
+  NavDropdown,
+  Navbar,
+  Nav,
+  Button,
+  Container,
+} from "react-bootstrap";
 import "@/public/styles/header.scss";
 import {
   AiOutlineFacebook,
@@ -52,7 +60,7 @@ export default function Header() {
           <Navbar.Brand to="/" className="logoNav">
             <Link href="/">
               {" "}
-              <img src="/images/logo-final.png" alt="logo" />
+              <img src="/images/website-logo.png" alt="logo" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

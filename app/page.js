@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
-import Image from "next/image";
 import "@/public/styles/home.scss";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -11,7 +10,7 @@ import PackageCard from "./component/PackageCard";
 import Filter from "./component/Filter";
 import { Input } from "antd";
 import { TiLocationArrow } from "react-icons/ti";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 
 export default function Home() {
   const btnFocus = useRef(null);
@@ -93,18 +92,18 @@ export default function Home() {
         </h5>
         <p>Shirdi Flight Tour Package</p>
         <ButtonGroup className="btn-groups mb-4 p-1">
-          <Button className="rounded-2" type="button" ref={btnFocus}>
+          <Button className=" rounded-2 mx-1" type="button" ref={btnFocus}>
             Chennai
           </Button>
           <Button
-            className="rounded-2"
+            className=" rounded-2 mx-1"
             type="button"
             onClick={() => btnFocus.current.blur()}
           >
             Bangalore
           </Button>
           <Button
-            className="rounded-2"
+            className=" rounded-2 mx-1"
             type="button"
             onClick={() => btnFocus.current.blur()}
           >
@@ -173,10 +172,10 @@ export default function Home() {
       </div>
       {/* </div> */}
       <div>
-        <Container className="py-5">
+        {/* <Container className="py-5">
           <div className="touch-container">
             <Row className="touch-row">
-              <Col lg={4} md={4} sm={12}>
+              <Col lg={12} md={12} sm={12}>
                 <span>
                   <img
                     src="/images/aeroplane 2.jpg"
@@ -184,14 +183,26 @@ export default function Home() {
                   ></img>
                 </span>
               </Col>
-              <Col lg={8} md={8} sm={12} className="touch-right">
-                <div className="touch-top">
-                  <span>Keep in touch</span> <br />
-                  <h4>Travel with Us</h4>
-                </div>
-                <div className="touch-input d-flex justify-content-between align-items-center">
+            </Row>
+            <Row>
+              <Col lg={12} md={12} sm={12} className="touch-top ">
+                <span>Keep in touch</span> <br />
+                <h4>Travel with Us</h4>
+              </Col>
+            </Row>
+            <Row>
+              <Col
+                lg={{ span: 8, offset: 4 }}
+                md={8}
+                sm={12}
+                className="touch-right"
+              >
+                <div className="touch-input d-flex justify-content-between align-items-center mx-4">
                   <div>
-                    <Input placeholder="Enter Your Email Address" />
+                    <Input
+                      placeholder="Enter Your Email Address"
+                      className="px-3 py-2"
+                    />
                   </div>
                   <div className="touch-btn d-flex justify-content-between p-2 rounded-2 align-items-center">
                     <Button type="button">Send Us</Button>
@@ -201,6 +212,36 @@ export default function Home() {
               </Col>
             </Row>
           </div>
+        </Container> */}
+        <Container className="touch-container">
+          <div className="touch-border w-75 my-5"></div>
+          <Row className="touch-content">
+            <Col lg={4} className="touch-image">
+              <Image src="/images/aeroplane 2.jpg" className="touch-img" />
+            </Col>
+            <Col lg={{ span: 6, offset: 6 }} className="touch-right-content">
+              {/* <div className="touch-right"> */}
+              <Row>
+                <Col lg={6} md={6} className="touch-top">
+                  <span>Keep in touch</span> <br />
+                  <h4>Travel with Us</h4>
+                </Col>
+
+                <Col lg={12} md={8} className="d-flex touch-form my-2">
+                  <Input
+                    placeholder="Enter Your Email Address"
+                    className="px-3 py-2"
+                  />
+                  <div className="touch-btn d-flex justify-content-between p-2 mx-2 rounded-2 align-items-center">
+                    <Button type="button">Send Us</Button>
+                    <TiLocationArrow />
+                  </div>
+                </Col>
+              </Row>
+
+              {/* </div> */}
+            </Col>
+          </Row>
         </Container>
 
         {/* <div className="keep-touch">

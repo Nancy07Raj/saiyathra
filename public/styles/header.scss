@@ -51,6 +51,14 @@
                 color:$orange-color;
             }
         }
+        @media screen and (max-width: 450px) and (min-width: 300px) {
+            .logoNav{
+                width: 70%;
+                img{
+                    width: 70%;
+                }
+            }
+        }
     }
 
    
