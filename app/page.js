@@ -216,10 +216,10 @@ export default function Home() {
         <Container className="touch-container">
           <div className="touch-border w-75 my-5"></div>
           <Row className="touch-content">
-            <Col lg={4} className="touch-image">
+            <Col lg={4} xl={2} className="touch-image">
               <Image src="/images/aeroplane 2.jpg" className="touch-img" />
             </Col>
-            <Col lg={{ span: 6, offset: 6 }} className="touch-right-content">
+            <Col lg={{ span: 6, offset: 5 }} className="touch-right-content">
               {/* <div className="touch-right"> */}
               <Row>
                 <Col lg={6} md={6} className="touch-top">
