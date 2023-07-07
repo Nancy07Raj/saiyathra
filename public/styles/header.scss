@@ -1,0 +1,47 @@
+
+.header{
+    .top-header{
+        background-color: $blue-color;
+        p,svg{
+            color: white
+        }
+        p{
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+        .social-media{
+            &::before{
+                content: '|';
+                color:white;
+            }
+            svg{
+                font-size: 2rem;
+                margin: 0 0.2rem;
+             
+            }
+        }
+        
+    }
+
+    .navbar{
+        background-color: $header-gray;
+        .logoNav{
+            // img{
+            //     width:150px;
+            // }
+        }
+        .navbar-nav{
+            a{
+                font-weight: 600;
+                margin: 0 0.2rem;
+            }
+            .active{
+                color:$orange-color;
+            }
+        }
+    }
+
+   
+}
+
+

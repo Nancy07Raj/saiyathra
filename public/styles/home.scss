@@ -1,0 +1,194 @@
+
+.package-card{
+    background-color: $bg-color;
+    .banner-filter{
+        .top-banner{
+            img{
+                width: 100%;
+            }
+        }
+        .container{
+            margin-top: -20px;
+           
+            .filter-tab{
+                // display: inline;
+                background-color: $blue-btn-left;
+                color: white;
+                // width: 20%;
+                // border-top-left-radius: 12px;
+                // border-top-right-radius: 12px;
+            }
+            .filter-search{
+                background-color: white;
+                border-top-right-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+            }
+            .filter-btn{
+                background-color: $blue-btn-left;
+                color: white;
+                .btn-primary{
+                    border:none;
+                    background-color: $blue-btn-left;
+                }
+            }
+        }
+    }
+    .feature-item{
+        h5{
+            margin: 0;
+        }
+        p{
+            font-size: 10px;
+            margin: 0;
+        }
+    }
+    .btn-groups{
+        background-color: white;
+        .btn-primary{
+            background-color: white;
+            border: none;
+            color:black;
+            &:focus{
+                background-color: $blue-btn-left;
+                color: white;
+            }
+        }
+    }
+    .card{
+        .days{
+            margin-top: -25px;
+            background-color: $bg-color;
+            width: max-content;
+            font-size: 12px;
+            margin-left: 80%;
+        }
+        .card-title{
+            font-size: 18px;
+            font-weight: 600;
+            height: 35px;
+            .card-subtitle{
+                font-size: 12px;
+                font-weight: 500;
+                padding: 10px 0;
+            }
+        }
+        .amenities-item{
+            p{
+                font-size: 12px;
+            }
+        }
+        .card-btn{
+            .detail-btn{
+                text-decoration: none;
+                background-image: linear-gradient($blue-btn-left, $blue-btn-right);
+                color: white;
+                .btn-primary{
+                    font-size: 10px;
+                    border: none;
+                    background-image: linear-gradient($blue-btn-left, $blue-btn-right);
+                }
+            }
+            .book-btn{
+                text-decoration: none;
+                background-image: linear-gradient($orange-btn-left, $orange-btn-right);
+                color: white;
+                .btn-primary{
+                    font-size: 10px;
+                    border: none;
+                    background-image: linear-gradient($orange-btn-left, $orange-btn-right);
+                }
+            }
+        }
+    }
+    .booknow-banner{
+        background-image: url('/images/book-now.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        // height: 400px;
+        .booknow-content{
+            img{
+                // width: 80%;
+            }
+            .booknow-title{
+                border: 3px solid $blue-btn-left;
+            }
+            .path{
+                margin-top: -25px;
+                background-color: white;
+                margin-left: 15%;
+                margin-right: 15%;
+                padding: 5px;
+            }
+            .booknow-info{
+                background-color: $blue-btn-left;
+                color: white;
+                border: 2px solid white;
+            }
+            .btn-primary{
+                background-color: $blue-btn-left;
+                border: 2px solid white;
+            }
+        }
+    }
+    .touch-container{
+        border: 3px solid $blue-btn-left;
+        border-radius: 15px;
+        width: 60%;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        .touch-row{
+            align-items: center;
+            padding: 20px 0;
+            .touch-img{
+                margin-left: -180px;
+                background-color: #f0f0f6;
+                display: flex;
+            }
+            .touch-right{
+                position: relative;
+                .touch-top{
+                    position: absolute;
+                    top: -93px;
+                    padding: 0 15px;
+                    background-color: $bg-color;
+                }
+                .touch-btn{
+                    background-color: $blue-btn-left;
+                    .btn-primary{
+                        background-color: $blue-btn-left;
+                        border: none;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 12px;
+                    }
+                    svg{
+                        color: white;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 450px) {
+            width: unset;
+            .touch-row{
+                .touch-img{
+                    width: 250px;
+                    margin-left: 0;
+                }
+                .touch-right{
+                    position: unset;
+                    .touch-top{
+                        position: unset;
+                    }
+                    .touch-input{
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+ 
+    }
+}
