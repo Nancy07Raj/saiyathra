@@ -41,7 +41,7 @@ export default function PackageCard() {
                       <p >Food</p>
                     </div>
                     <div className="amenities-item px-2 ">
-                    <Image src="/images/Transport-icon.png" alt="flight" />
+                    <Image src="/images/transport-icon.png" alt="flight" />
                       <p>Transfer</p>
                     </div>
                   </div>
