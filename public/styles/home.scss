@@ -22,6 +22,18 @@
         border-top-right-radius: 1rem;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
+        font-weight: 500;
+        p{
+          color: black;
+        }
+        .ant-select{
+          .ant-select-selector{
+            border-radius: 20px;
+          }
+        }
+        .ant-picker{
+          border-radius: 20px;
+        }
       }
       .filter-btn {
         background-color: $blue-btn-left;
@@ -29,6 +41,7 @@
         .btn-primary {
           border: none;
           background-color: $blue-btn-left;
+          padding: 5px;
         }
       }
     }
@@ -36,6 +49,7 @@
   .feature-item {
     h5 {
       margin: 0;
+      font-weight: 600;
     }
     p {
       font-size: 10px;
@@ -44,14 +58,20 @@
   }
   .btn-groups {
     background-color: white;
+    box-shadow: 0 10px 15px #cecfcf inset;
     .btn-primary {
-      background-color: white;
+      background-color: transparent;
       border: none;
       color: black;
+      font-weight: 600;
       &:focus {
         background-color: $blue-btn-left;
         color: white;
       }
+    }
+    .btn-active{
+      background-color: $blue-btn-left;
+      color: white;
     }
     @media screen and (max-width:320px) and (min-width: 300px) {
         .btn-primary{
@@ -67,6 +87,13 @@
       font-size: 12px;
       margin-left: 80%;
       border: 1px solid $blue-btn-left;
+      font-weight: 600;
+    }
+    .price{
+      font-weight: 600;
+      span{
+        font-weight: 400;
+      }
     }
     .card-title {
       font-size: 18px;
@@ -170,6 +197,7 @@
               background-color: $blue-btn-left;
               border: none;
               padding: 0;
+              margin-right: 5px;
             }
             svg {
               color: white;

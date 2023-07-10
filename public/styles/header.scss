@@ -8,16 +8,21 @@
         p{
             margin-bottom: 0;
             font-size: 14px;
+            font-weight: 500;
         }
         .social-media{
             &::before{
                 content: '|';
                 color:white;
+                margin-right: 5px;
             }
             svg{
                 font-size: 2rem;
                 margin: 0 0.2rem;
              
+            }
+            img{
+                background-color: $blue-color;
             }
         }
 
@@ -38,18 +43,20 @@
     .navbar{
         background-color: $header-gray;
         .logoNav{
-            // img{
-            //     width:150px;
-            // }
+            padding: 0;
         }
         .navbar-nav{
             a{
                 font-weight: 600;
                 margin: 0 0.2rem;
+                color: black;
             }
             .active{
                 color:$orange-color;
             }
+        }
+        .btn-outline-warning{
+            font-weight: 700;
         }
         @media screen and (max-width: 450px) and (min-width: 300px) {
             .logoNav{

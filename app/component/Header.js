@@ -11,6 +11,7 @@ import {
   Nav,
   Button,
   Container,
+  Image,
 } from "react-bootstrap";
 import "@/public/styles/header.scss";
 import {
@@ -45,10 +46,14 @@ export default function Header() {
                   <p>FLIGHT PACKAGE : +91 - 89 39 080 223</p>
                 </div>
                 <span className="d-flex social-media ps-2 align-items-center">
-                  <AiOutlineFacebook />
-                  <AiOutlineInstagram />
-                  <PiTwitterLogoThin />
-                  <AiOutlineYoutube />
+                  <Image src="/images/facebook.png" alt="facebook" />
+                  {/* <AiOutlineFacebook /> */}
+                  {/* <AiOutlineInstagram /> */}
+                  <Image src="/images/instagram.png" alt="Instagram" />
+                  <Image src="/images/twitter.png" alt="twitter" />
+                  {/* <PiTwitterLogoThin /> */}
+                  {/* <AiOutlineYoutube /> */}
+                  <Image src="/images/youtube.png" alt="youtube" />
                 </span>
               </div>
             </Col>
@@ -60,7 +65,7 @@ export default function Header() {
           <Navbar.Brand to="/" className="logoNav">
             <Link href="/">
               {" "}
-              <img src="/images/website-logo.png" alt="logo" />
+              <img src="/images/website-logo.png" alt="logo" width={220} />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -81,7 +86,7 @@ export default function Header() {
               <Nav.Link href="/contact">CONTACT</Nav.Link>
             </Nav>
             <Button variant="outline-warning" className="d-flex">
-              Book Now
+              BOOK NOW
             </Button>
           </Navbar.Collapse>
         </Container>

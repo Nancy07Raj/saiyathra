@@ -11,58 +11,61 @@ export default function PackageCard() {
   return (
     <>
       <Row>
-          {packageCardDetails.map((card) => (
-            <>
+        {packageCardDetails.map((card) => (
+          <>
             <Col lg={3} md={6} sm={12} className="my-2">
               <Card className="border-0">
                 <Card.Img variant="top" src={card.image} />
-                  <Card.Body>
+                <Card.Body>
                   <div className="days px-2 py-1 rounded-3">{card?.days}</div>
-                    <Card.Title>
-                      {card.name}
-                      <Card.Subtitle>{card?.para}</Card.Subtitle>
-                    </Card.Title>
-                    
-                    <Card.Text className="price m-0 pb-1">
+                  <Card.Title>
+                    {card.name}
+                    <Card.Subtitle>{card?.para}</Card.Subtitle>
+                  </Card.Title>
+
+                  <Card.Text className="price m-0 pb-1">
                     {card?.price}
                     <span> per person</span>
                   </Card.Text>
                   <div className="amenities d-flex  align-items-center justify-content-between">
-                    <div className="amenities-item px-2 ">
+                    <div className="amenities-item d-flex flex-column align-items-center px-2 ">
                       <Image src="/images/flight-icon.png" alt="flight" />
-                      <p >Flight</p>
+                      <p>Flight</p>
                     </div>
-                    <div className="amenities-item px-2 ">
-                    <Image src="/images/room-icon.png" alt="flight" />
-                      <p >Room</p>
+                    <div className="amenities-item d-flex flex-column align-items-center px-2 ">
+                      <Image src="/images/room-icon.png" alt="flight" />
+                      <p>Room</p>
                     </div>
-                    <div className="amenities-item px-2">
-                    <Image src="/images/food-icon.png" alt="flight" />
-                      <p >Food</p>
+                    <div className="amenities-item d-flex flex-column align-items-center px-2">
+                      <Image src="/images/food-icon.png" alt="flight" />
+                      <p>Food</p>
                     </div>
-                    <div className="amenities-item px-2 ">
-                    <Image src="/images/transport-icon.png" alt="flight" />
+                    <div className="amenities-item d-flex flex-column align-items-center px-2 ">
+                      <Image src="/images/transport-icon.png" alt="flight" />
                       <p>Transfer</p>
                     </div>
                   </div>
                   <div className="card-btn d-flex justify-content-between">
                     <a href="#" className="detail-btn rounded-3 px-2">
-                        <Button type="button" className="px-0  pe-4">DETAILS </Button>     
-                        <SlCalender />  
+                      <Button type="button" className="px-0  pe-4">
+                        DETAILS{" "}
+                      </Button>
+                      <SlCalender />
                     </a>
                     <div className="book-btn rounded-3">
-                    <a href="#" className="book-btn rounded-3 px-2">
-                        <Button type="button"  className="px-0  pe-2">BOOK ONLINE </Button>     
-                        <SlCalender />  
-                    </a>                     
+                      <a href="#" className="book-btn rounded-3 px-2">
+                        <Button type="button" className="px-0  pe-2">
+                          BOOK ONLINE{" "}
+                        </Button>
+                        <SlCalender />
+                      </a>
                     </div>
                   </div>
                 </Card.Body>
               </Card>
-              </Col>
-            </>
-          ))}
-        
+            </Col>
+          </>
+        ))}
       </Row>
     </>
 

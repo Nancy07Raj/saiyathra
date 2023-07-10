@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "@/public/styles/home.scss";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -13,11 +13,14 @@ import { TiLocationArrow } from "react-icons/ti";
 import { Row, Col, Image } from "react-bootstrap";
 
 export default function Home() {
-  const btnFocus = useRef(null);
+  const [btnActive, setBtnActive] = useState(true);
 
   useEffect(() => {
-    btnFocus.current.focus();
+    setBtnActive(true);
   }, []);
+
+  console.log(btnActive, "btnActive");
+
   return (
     <div className="package-card">
       <Filter />
@@ -92,20 +95,23 @@ export default function Home() {
         </h5>
         <p>Shirdi Flight Tour Package</p>
         <ButtonGroup className="btn-groups mb-4 p-1">
-          <Button className=" rounded-2 mx-1" type="button" ref={btnFocus}>
+          <Button
+            className={`rounded-2 mx-1 ${btnActive ? "btn-active" : ""}`}
+            type="button"
+          >
             Chennai
           </Button>
           <Button
             className=" rounded-2 mx-1"
             type="button"
-            onClick={() => btnFocus.current.blur()}
+            onClick={() => setBtnActive(false)}
           >
             Bangalore
           </Button>
           <Button
             className=" rounded-2 mx-1"
             type="button"
-            onClick={() => btnFocus.current.blur()}
+            onClick={() => setBtnActive(false)}
           >
             Coimbatore
           </Button>
@@ -129,7 +135,7 @@ export default function Home() {
         </Container> */}
       <div className="booknow-banner">
         <Container className="py-2">
-          <Row className="justify-content-center align-items-center">
+          <Row className="justify-content-between align-items-center">
             <Col lg={4} md={12} sm={12}>
               {/* <img src="/images/aeroplane-1.png" alt="aeroplane-1" />
                 <div className="booknow-title fs-1 fw-bold px-5 pb-4">
@@ -234,7 +240,8 @@ export default function Home() {
                   />
                   <div className="touch-btn d-flex justify-content-between p-2 mx-2 rounded-2 align-items-center">
                     <Button type="button">Send Us</Button>
-                    <TiLocationArrow />
+                    <Image src="/images/send-icon.png" alt="send-icon" />
+                    {/* <TiLocationArrow /> */}
                   </div>
                 </Col>
               </Row>

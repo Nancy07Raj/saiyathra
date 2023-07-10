@@ -13,13 +13,13 @@ export default function Filter() {
       </div>
       <Container className="mb-5">
         <Row>
-          <Col lg={2} md={2} xs={4} className="p-0">
+          <Col xl={1} lg={2} md={2} xs={4} className="p-0">
             <div className="filter-tab p-2 rounded-top-4 text-center ">
               Flights
             </div>
           </Col>
         </Row>
-        <Row className="filter-search justify-content-center py-4 px-5">
+        <Row className="filter-search justify-content-center p-4">
           <Col
             lg={2}
             md={6}
