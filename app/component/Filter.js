@@ -56,6 +56,7 @@ export default function Filter() {
             <DatePicker
               suffixIcon={<BiSolidDownArrow />}
               placeholder="Mm/Dd/Yy"
+              format={(val) => val.format("DD/MM/YYYY")}
             />
           </Col>
           <Col
@@ -68,6 +69,7 @@ export default function Filter() {
             <DatePicker
               suffixIcon={<BiSolidDownArrow />}
               placeholder="Mm/Dd/Yy"
+              format={(val) => val.format("DD/MM/YYYY")}
             />
           </Col>
           <Col lg={1} md={6} xs={6} className="py-lg-0 py-md-2 py-xs-2 py-sm-2">

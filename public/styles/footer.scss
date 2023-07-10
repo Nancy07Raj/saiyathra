@@ -1,7 +1,3 @@
-.footer-title{
-    color: $blue-btn-left;
-    font-weight: 600;
-}
 .footer{
     .banner{
         background-image: url("/images/footer-bg.jpg");
@@ -45,4 +41,9 @@
             }
         }
     }
+}
+
+.footer-title{
+    color: $blue-btn-left !important;
+    font-weight: 600;
 }

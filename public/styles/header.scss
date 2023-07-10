@@ -66,6 +66,14 @@
                 }
             }
         }
+
+        @media screen and (max-width: 900px) and (min-width: 750px) {
+            .logoNav{
+                img{
+                    width: 180px;
+                }
+            }
+        }
     }
 
    

@@ -136,7 +136,7 @@ export default function Home() {
       <div className="booknow-banner">
         <Container className="py-2">
           <Row className="justify-content-between align-items-center">
-            <Col lg={4} md={12} sm={12}>
+            <Col lg={4} md={12} sm={12} className="booknow-left">
               {/* <img src="/images/aeroplane-1.png" alt="aeroplane-1" />
                 <div className="booknow-title fs-1 fw-bold px-5 pb-4">
                   Chennai
@@ -166,7 +166,12 @@ export default function Home() {
                 </Button>
               </div>
             </Col>
-            <Col lg={6} md={12} sm={12}>
+            <Col
+              lg={6}
+              md={12}
+              sm={12}
+              className="d-flex justify-content-center"
+            >
               <img
                 src="/images/footer-images.png"
                 alt="footer-image"
@@ -238,7 +243,7 @@ export default function Home() {
                     placeholder="Enter Your Email Address"
                     className="px-3 py-2"
                   />
-                  <div className="touch-btn d-flex justify-content-between p-2 mx-2 rounded-2 align-items-center">
+                  <div className="touch-btn d-flex justify-content-center p-2 mx-2 rounded-2 align-items-center">
                     <Button type="button">Send Us</Button>
                     <Image src="/images/send-icon.png" alt="send-icon" />
                     {/* <TiLocationArrow /> */}
