@@ -34,6 +34,11 @@
         }
         .ant-picker{
           border-radius: 20px;
+          .ant-picker-input{
+            input{
+              cursor: pointer;
+            }
+          }
         }
       }
       .filter-btn {
@@ -141,6 +146,7 @@
     background-image: url("/images/book-now.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 2rem 0;
     // height: 400px;
     .booknow-content {
       img {

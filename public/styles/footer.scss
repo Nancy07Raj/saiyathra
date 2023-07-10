@@ -4,8 +4,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         .content{
-            background-color: white;
-            opacity: 70%;
+            background: rgba(255, 255, 255, 0.6);
             a{
                 text-decoration: none;
                 color: black;
@@ -24,6 +23,16 @@
                     border-radius: 4px
                 }
             }
+            // &:before{
+            //     content:"";
+            //     position: absolute;
+            //     top: 0px;
+            //     right: 0px;
+            //     bottom: 0px;
+            //     left: 0px;
+            //     background-color: white;
+            //     opacity: 70%;
+            // }
         }
     }
     .copyright{

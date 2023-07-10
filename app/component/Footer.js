@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="banner d-flex justify-content-center">
         <Row className="content d-flex m-5 p-4 w-75 rounded-4">
           <Col lg={3} md={6} sm={12} className="address-logo mt-3 ">
-            <img src="/images/website-logo.png" alt="logo" />
+            <Image src="/images/website-logo.png" alt="logo" />
             <div className="address">
               <p className="footer-title">ADDRESS:</p>
               <div className="detail fw-medium">
